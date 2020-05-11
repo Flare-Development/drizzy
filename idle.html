@@ -1,0 +1,57 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function getPlayer() {
+        var getArgs = "iMonody_X"
+        var getArgs = prompt("Please enter a username!")
+        if (!getArgs) return alert("Cancelled you did not enter a name!");
+var proxyUrlid = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlid = `https://api.roblox.com/users/get-by-username?Username=${getArgs}`
+const { Id } = fetch(proxyUrlid + targetUrlid)
+  .then(blob => blob.json())
+  .then(loadered => {
+
+      if (!loadered.Id) return alert("This is not a player");
+
+
+
+    console.log("Gotten First ID");
+    // Second Request!
+    var proxyUrlstats = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlstats = `https://friends.roblox.com/v1/users/${loadered.Id}/friends/count`
+const { Ido } = fetch(proxyUrlstats + targetUrlstats)
+  .then(blob => blob.json())
+  .then(freindsCount => {
+        console.log(freindsCount.count)
+        var proxyUrlstats = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlstats = `https://friends.roblox.com/v1/users/${loadered.Id}/followers/count`
+const { Ido } = fetch(proxyUrlstats + targetUrlstats)
+  .then(blob => blob.json())
+  .then(followersCount => {
+        console.log(followersCount.count)
+           
+  })
+    
+  })
+  
+
+// End of second request
+
+
+
+
+
+
+
+  
+   
+  })
+  .catch(e => {
+    console.log(e);
+    return e;
+  });
+  
+    }
+  
+</script>
+<button onclick="getPlayer()">Click me</button>
+<p id=></p>
