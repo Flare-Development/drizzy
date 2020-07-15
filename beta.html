@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/Djavascript:void(0);TD/xhtml1-strict.dtd">
+<link rel="icon" href="https://cdn.discordapp.com/attachments/624440620647186453/709793190651232286/bloxyplus.png" type="image/png">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Roblox Profiles</title>
+<meta name="keywords" content="" />
+<meta name="description" content="Roblox APIS" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="https://roblox.quantumapp.net/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="https://roblox.quantumapp.net/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+	 <center>
+	  <h2>Getting Profile...</h2>
+	  <p></p>
+	  <img src="https://www.y2mate.com/themes/images/loading.gif"></img>
+	  </center>
+	</div>
+</div>  
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><img class="icon icon-cog" width="55px" src="https://raw.githubusercontent.com/QuantumappInc/image-storage/master/rlblx.png"></img><a href="#">iMonody's Tools</a></h1>
+			<div id="menu">
+				<ul>
+					<li id="menu_selected" class="current_page_item"><a href="#" accesskey="1" title="">Roblox Profiles</a></li>
+					<li><a href="#" accesskey="2" title="">[indev]</a></li>
+					<li><a href="#" accesskey="3" title="">[indev]</a></li>
+					<li><a href="#" accesskey="4" title="">[indev]</a></li>
+					<li><a href="#" accesskey="5" title="">[indev]</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page-wrapper">
+	<div id="page" class="container">
+		<div class="title">
+			<h2>Roblox Profile Lookup
+
+			</h2>
+		</div>
+		<style>
+			#findButton {
+				display: inline-block;
+   padding:10px 10px 10px 10px;
+		background: #E1221A;
+		text-align: center;
+	
+        width:50%;
+		color:white;
+		font-size: 15px;
+		border-width: 5px;
+        border-style:solid;
+        border-color:white;
+		
+			}
+            
+            #findIndexer {
+				display: inline-block;
+   padding:10px 10px 10px 10px;
+		background: #a11913;
+		text-align: center;
+	
+        width:50%;
+		color:white;
+		font-size: 15px;
+		border-width: 0px;
+       
+		
+			}
+			#div1 {
+	display: inline-block;
+	width: 40%;
+	padding-bottom: 20px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #2C2F33;
+	border-width:10px;
+	border-style: solid;
+	border-color:black;
+	color:white;
+        }
+
+       hr{
+		   background-color:black;
+		   height:3px;
+		   border:none;
+	   }
+
+
+	   .stats {
+		   font-size:25px;
+		   color:white;
+	   }
+	   .stats h2 {
+		
+		   color:white;
+	   }
+       
+       #playerField {
+     width: 90%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/howto/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+} 
+		</style>
+	
+    <p></p>
+    <div id="findButton"> <center>
+    <h2 style="color:white;">Input Username</h2>
+    <p></p>
+    <input placeholder="Input roblox username" id="playerField"></input>
+        <p></p>
+    <button id="findIndexer" onclick="getPlayer()">Search!</button>
+    </center>
+    
+    </div>
+	</div>
+	<p>&nbsp</p>
+	<div id="div1"><div id="profiler"><img width="350px" src="https://web.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userid=494230014" id="robloxProfile"></div><hr>
+	<div class="stats">
+	<h2 id="username">Roblox</h2>
+	<p></p>
+	<strong>Followers: </strong><span id="fld">N/A</span>
+	<p><small></small></p>
+	<strong>Friends: </strong><span id="friendss">N/A</span>
+	<p><small></small></p>
+	<strong>ID: </strong><span id="uid">1</span>
+ 
+</div>
+</div>
+	<p></p>
+</center>
+	<div class="wrapper">
+</div>
+<center>
+
+	
+	</div>
+</div>
+<div id="wrapper2">
+	<div id="tools">
+		<div class="title">
+			<h2>Roblox profiles in Discord!</h2>
+		</div>
+		<style>
+			#deezButton {
+				display: inline-block;
+		padding: 0em 2em;
+		background: #7289DA;
+		text-align: center;
+		height:40px;
+		color:white;
+		font-size: 15px;
+		border-width: 0px;
+		border-radius: 5px 5px 5px 5px;
+			}
+		</style>
+	<button id="deezButton" onclick="botIndex()" >Link our bot <strong>Quantum</strong> with your Discord Server!</button>
+	<script>
+		function botIndex() {
+  window.open("https://bot.quantumapp.net");
+}
+	</script>
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p>&copy; Quantumapp &amp Templated. All rights reserved. | <a href="https://api.roblox.com/docs" target="_blank">Roblox API Docs</a></p>
+		
+</div>
+</body>
+</html>
+<script>
+
+ function onED() {
+    
+ 
+ }
+
+
+
+
+    function getPlayer() {
+        var getArgs = "iMonody_X"
+        var getArgs = prompt("Please enter a username!")
+        if (!getArgs) return alert("Cancelled you did not enter a name!");
+var proxyUrlid = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlid = `https://api.roblox.com/users/get-by-username?Username=${getArgs}`
+const { Id } = fetch(proxyUrlid + targetUrlid)
+  .then(blob => blob.json())
+  .then(loadered => {
+
+      if (!loadered.Id) return alert("This is not a player");
+       
+	  var modal = document.getElementById("myModal");
+	  modal.style.display = "block"
+    console.log("Gotten First ID");
+    // Second Request!
+    var proxyUrlstats = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlstats = `https://friends.roblox.com/v1/users/${loadered.Id}/friends/count`
+const { Ido } = fetch(proxyUrlstats + targetUrlstats)
+  .then(blob => blob.json())
+  .then(freindsCount => {
+        console.log(freindsCount.count)
+        var proxyUrlstats = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlstats = `https://friends.roblox.com/v1/users/${loadered.Id}/followers/count`
+const { Ido } = fetch(proxyUrlstats + targetUrlstats)
+  .then(blob => blob.json())
+  .then(followersCount => {
+        console.log(followersCount.count)
+        const followersss = followersCount.count
+        var proxyUrlstats = 'https://cors-anywhere.herokuapp.com/',
+    targetUrlstats = `https://friends.roblox.com/v1/users/${loadered.Id}/followers/count`
+const { Ido } = fetch(proxyUrlstats + targetUrlstats)
+  .then(blob => blob.json())
+  .then(followersCount => {
+        console.log(followersCount.count)
+		var imgToday = `https://web.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userid=${loadered.Id}`
+		modal.style.display = "none";
+		document.getElementById('robloxProfile').src=`${imgToday}`
+		document.getElementById('username').innerHTML = getArgs;
+		console.log(followersss)
+		document.getElementById('fld').innerHTML = followersss;
+		document.getElementById('friendss').innerHTML = freindsCount.count;
+		document.getElementById('uid').innerHTML = loadered.Id;
+
+		 
+		 
+		   // https://web.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userid=${Id}
+
+            
+
+  })
+  })
+    
+  })
+  
+
+// End of second request
+
+
+
+
+
+
+
+  
+   
+  })
+  .catch(e => {
+    console.log(e);
+    return e;
+  });
+  
+    }
+  
+</script>
