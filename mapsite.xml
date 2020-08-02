@@ -8,20 +8,15 @@
 
 
 <url>
-  <loc>https://bot.quantumapp.net/</loc>
+  <loc>https://roblox.quantumapp.net</loc>
   <lastmod>2020-06-03T16:49:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://bot.quantumapp.net/invite/</loc>
+  <loc>https://bot.quantumapp.net/browser</loc>
   <lastmod>2020-06-03T16:49:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
-<url>
-  <loc>https://bot.quantumapp.net/commands</loc>
-  <lastmod>2020-06-03T16:49:55+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
 
 </urlset>
