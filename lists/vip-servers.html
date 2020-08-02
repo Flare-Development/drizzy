@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/624440620647186453/709793190651232286/bloxyplus.png" type="image/png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>VIP Server list for <a href="https://www.roblox.com/users/506737762" target="_blank">iMonody_X</a></h2>
+  <p>A list of currently public VIP servers hosted by <a href="https://twitter.com/iMonody_X" target="_blank">@iMonody_X</a></p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Game Name</th>
+        <th>Activity</th>
+        <th>Public</th>
+        <th>Link(s)</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Jailbreak</td>
+        <td>Active</td>
+        <td>Yes</td>
+        <td><a href="https://www.roblox.com/games/606849621/BLADE-Jailbreak?privateServerLinkCode=h9r_ao6m3TXwGUKDc9IiU50eohksX3jq" target="_blank">https://www.roblox.com/games/606849621/BLADE-Jailbreak?privateServerLinkCode=h9r_ao6m3TXwGUKDc9IiU50eohksX3jq</a></td>
+      </tr>
+      <tr>
+        <td>Vehical Simulator</td>
+        <td>Active</td>
+        <td>Yes</td>
+        <td><a href="https://www.roblox.com/games/171391948/Car-Shows-Vehicle-Simulator?privateServerLinkCode=SS7L7ST10cffEjoof-AFi7Vt6XQJflTk" target="_blank">https://www.roblox.com/games/171391948/Car-Shows-Vehicle-Simulator?privateServerLinkCode=SS7L7ST10cffEjoof-AFi7Vt6XQJflTk</a></td>
+      </tr>
+      <tr>
+        <td>Arsenal</td>
+        <td>Active</td>
+        <td>Yes</td>
+        <td><a href="https://www.roblox.com/games/286090429/Arsenal?privateServerLinkCode=qdnAiAAwcEFEaK8HVhgnBS1PTw3wSGjL" target="_blank">https://www.roblox.com/games/286090429/Arsenal?privateServerLinkCode=qdnAiAAwcEFEaK8HVhgnBS1PTw3wSGjL</a></td>
+      </tr>
+      <tr>
+        <td>Party Place</td>
+        <td>Active</td>
+        <td>Yes</td>
+        <td><a href="https://www.roblox.com/games/4938510491/Party-Place-BETA?privateServerLinkCode=isXsLkah0Mff6h2W7lN1T39-qcy6yTTN" target="_blank">https://www.roblox.com/games/4938510491/Party-Place-BETA?privateServerLinkCode=isXsLkah0Mff6h2W7lN1T39-qcy6yTTN</a></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p>&copy Quantumapp Technologies Incorporated by iMonody_X / Nick</p>
+</div>
+ 
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</body>
+</html>
